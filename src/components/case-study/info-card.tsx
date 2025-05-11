@@ -9,9 +9,10 @@ interface InfoSectionProps {
   subtitle?: string
   media?: ImageProps
   id?: string
+  transparentMedia?: boolean
 }
 
-export function InfoSection({ title, children, className = "", bgColor = "bg-gray-100", subtitle, media, id }: InfoSectionProps) {
+export function InfoSection({ title, children, className = "", bgColor = "bg-gray-100", subtitle, media, id, transparentMedia = false }: InfoSectionProps) {
   return (
     <div className={`${bgColor} px-6 py-20 md:px-20`} id={id}>
       <div className={`max-w-7xl mx-auto ${className} flex flex-col md:flex-row gap-8 items-center`}>
@@ -25,7 +26,7 @@ export function InfoSection({ title, children, className = "", bgColor = "bg-gra
             <Image
               src={media.src}
               alt={media.alt}
-              className="mx-auto h-auto rounded-lg shadow-lg"
+              className={`mx-auto h-auto rounded-lg ${!transparentMedia && 'shadow-lg'}`}
               width={media.width}
               height={media.height}
             />
