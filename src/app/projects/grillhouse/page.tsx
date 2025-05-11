@@ -119,14 +119,14 @@ export default function GrillhouseCaseStudy() {
         <h2 className="font-bold mt-6 mb-2">⏱️ 1. Location & Store Assignment Challenges</h2>
         <div className="flex flex-col md:flex-row gap-10 justify-between mb-10">
           <div className="md:w-1/3">
-            <p>Original Issue (Before):
+            <div>Original Issue (Before):
               <ul>
                 <li className="flex items-start mb-2">
                   <span className="mr-2">•</span>
                   The original app would assign a specific store within Mexico to all users, regardless of where the user was located within the country. Also, changing the assigned store on the app was not an intuitive process. If they proceeded to order in the incorrect location, they would have to reorder through the correct store.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
           <div className="flex gap-10 md:w-2/3">
             <Image
@@ -147,14 +147,14 @@ export default function GrillhouseCaseStudy() {
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-start mb-10">
           <div className="md:w-1/3">
-            <p>Solution (After):
+            <div>Solution (After):
               <ul>
                 <li className="flex items-start mb-2">
                   <span className="mr-2">•</span>
                   Users get assigned to the correct store as per their ZIP code which they introduce during the onboarding process. If they were to change it at any point, they could do so by clicking the current ZIP code field that is located as a fixed position in the header. The store would then change accordingly if needed.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
           <div className="flex flex-wrap md:flex-nowrap gap-6 md:w-2/3">
             <Image
@@ -177,7 +177,7 @@ export default function GrillhouseCaseStudy() {
         <h2 className="font-bold mt-6 mb-2">🛒 2. Checkout & Order Tracking Inefficiencies</h2>
         <div className="flex flex-col md:flex-row gap-10 justify-between mb-10">
           <div className="md:w-1/3">
-            <p>Original Issue (Before):
+            <div>Original Issue (Before):
               <ul>
                 <li className="flex items-start mb-2">
                   <span className="mr-2">•</span>
@@ -186,7 +186,7 @@ export default function GrillhouseCaseStudy() {
                   Users had to re-enter delivery and payment details for each order.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
           <div className="flex gap-10 md:w-2/3">
             <Image
@@ -207,7 +207,7 @@ export default function GrillhouseCaseStudy() {
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-start mb-10">
           <div className="md:w-1/3">
-            <p>Solution (After):
+            <div>Solution (After):
               <ul>
                 <li className="flex items-start mb-2">
                   <span className="mr-2">•</span>
@@ -216,7 +216,7 @@ export default function GrillhouseCaseStudy() {
                   Additionally, enabled users to save multiple addresses and payment methods for a streamlined checkout process.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
           <div className="flex flex-wrap md:flex-nowrap gap-6 md:w-2/3">
             <Image
@@ -253,7 +253,7 @@ export default function GrillhouseCaseStudy() {
         <h2 className="font-bold mt-6 mb-2">🌟 3. Feature Discoverability & User Engagement</h2>
         <div className="flex flex-col md:flex-row gap-10 justify-between mb-10">
           <div className="md:w-1/3">
-            <p>Original Issue (Before):
+            <div>Original Issue (Before):
               <ul>
                 <li className="flex items-start mb-2">
                   <span className="mr-2">•</span>
@@ -264,7 +264,7 @@ export default function GrillhouseCaseStudy() {
                   Users were not engaging with the loyalty program due to its lack of visibility.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
           <div className="flex gap-10 md:w-2/3">
             <Image
@@ -292,7 +292,7 @@ export default function GrillhouseCaseStudy() {
         </div>
         <div className="flex flex-col md:flex-row gap-10 items-start mb-10">
           <div className="md:w-1/3">
-            <p>Solution (After):
+            <div>Solution (After):
               <ul>
                 <li className="flex items-start mb-2">
                   <span className="mr-2">•</span>
@@ -303,7 +303,7 @@ export default function GrillhouseCaseStudy() {
                   Integrated the loyalty program into the navigation and provided clear information on rewards and how to earn them.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
           <div className="flex flex-wrap md:flex-nowrap gap-6 md:w-2/3">
             <Image
