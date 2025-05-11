@@ -13,4 +13,12 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
+eslintConfig.push({
+  plugins: ["prettier"],
+  extends: ["plugin:prettier/recommended"],
+  rules: {
+    "prettier/prettier": "error",
+  },
+});
+
 export default eslintConfig;
