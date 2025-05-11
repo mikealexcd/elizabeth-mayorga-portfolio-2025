@@ -102,7 +102,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="p-6 bg-blue-900">
+            <div className="p-6 bg-blue-900 h-full">
               <h3 className="font-bold text-xl mb-1 text-white">
                 KPMG - <br />
                 Proposal Generation Bot
@@ -111,9 +111,9 @@ export default function Home() {
                 I was tasked with leading the design of a new feature for mobile
                 and desktop.
               </p>
-              <button className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
+              <Link href="/projects/kpmg" className="bg-white border border-gray-300 h-5 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
                 READ CASE STUDY
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -128,7 +128,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="p-6 bg-orange-600">
+            <div className="p-6 bg-orange-600 h-full">
               <h3 className="font-bold text-xl mb-1 text-white">
                 GrillHouse by Sigma - <br />
                 App Redesign
@@ -137,9 +137,9 @@ export default function Home() {
                 Redesign of a an existing app from a business targeted to
                 deliver and pickup fresh cut meats.
               </p>
-              <button className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
+              <Link href='/projects/grillhouse' className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
                 READ CASE STUDY
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -154,7 +154,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="p-6 bg-blue-700">
+            <div className="p-6 bg-blue-700 h-full">
               <h3 className="font-bold text-xl mb-1 text-white">
                 BMO - <br />
                 US Wire Transfer
@@ -163,9 +163,9 @@ export default function Home() {
                 New feature introduced for BMO US to allow customers to send
                 wire transfers.
               </p>
-              <button className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
+              <Link href='/projects/bmo-wire-transfer' className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
                 READ CASE STUDY
-              </button>
+              </Link>
             </div>
           </div>
         </div>
