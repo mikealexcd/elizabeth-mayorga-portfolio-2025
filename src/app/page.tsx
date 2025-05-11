@@ -163,7 +163,7 @@ export default function Home() {
                 New feature introduced for BMO US to allow customers to send
                 wire transfers.
               </p>
-              <Link href='/projects/bmo-wire-transfer' className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
+              <Link href='/projects/bmo-wire-transfers' className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
                 READ CASE STUDY
               </Link>
             </div>
