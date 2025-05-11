@@ -1,5 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import ElizabethPortrait from "@/assets/homepage/elizabeth-portrait.png";
+import ElizabethMarshmallowAndCoffee from "@/assets/homepage/elizabeth-marshmallow-coffee.jpg";
+import KPMGProject from "@/assets/homepage/kpmg-project.jpg";
+import GrillHouseProject from "@/assets/homepage/grillhouse-project.jpg";
+import BMOProject from "@/assets/homepage/bmo-project.jpg";
 
 export default function Home() {
   return (
@@ -27,7 +32,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row gap-8 justify-between items-center mb-24">
-        <div className="md:max-w-xl max-w-3xl">
+        <div className="max-w-3xl">
           <p className="text-gray-600 mb-2">Welcome to my portfolio!</p>
           <h1 className="text-4xl font-bold mb-0">
             Hi! I&apos;m Elizabeth <span className="text-yellow-400">👋</span> —
@@ -61,11 +66,11 @@ export default function Home() {
         </div>
         <div className="relative">
           <Image
-            src="https://placehold.co/313x348/png"
+            src={ElizabethPortrait.src}
+            height={313}
+            width={348}
             alt="Elizabeth Mayorga"
-            width={313}
-            height={348}
-            className="rounded-3xl border-4 border-white shadow-lg mx-auto"
+            className="rounded-3xl mx-auto"
           />
           <div className="absolute top-60 -left-120 z-10 hidden md:block">
             <svg
@@ -92,17 +97,17 @@ export default function Home() {
         <h2 className="text-3xl font-bold mb-8">My projects</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Project 1 */}
-          <div className="rounded-xl overflow-hidden border-2 border-gray-500 shadow-md">
-            <div className="h-64  relative overflow-hidden">
+          <div className="rounded-2xl overflow-hidden border-2 border-gray-500 shadow-md">
+            <div className="h-40 md:h-115 relative overflow-hidden">
               <Image
-                src="https://placehold.co/460x417/png"
+                src={KPMGProject.src}
+                width={417}
+                height={460}
                 alt="KPMG Proposal Generation Bot"
-                width={460}
-                height={417}
-                className="object-cover"
+                className="object-cover h-full"
               />
             </div>
-            <div className="p-6 bg-blue-900 h-full">
+            <div className="p-10 bg-blue-900">
               <h3 className="font-bold text-xl mb-1 text-white">
                 KPMG - <br />
                 Proposal Generation Bot
@@ -118,17 +123,17 @@ export default function Home() {
           </div>
 
           {/* Project 2 */}
-          <div className="rounded-xl overflow-hidden border-2 border-orange-600 shadow-md bg-gradient-to-b from from-black to-orange-600">
-            <div className="h-64 relative overflow-hidden">
+          <div className="rounded-2xl overflow-hidden border-2 border-orange-600 shadow-md bg-gradient-to-b from from-black to-orange-600">
+            <div className="h-40 md:h-115 relative overflow-hidden">
               <Image
-                src="https://placehold.co/460x417/png"
+                src={GrillHouseProject.src}
+                width={417}
+                height={460}
                 alt="GrillHouse by Sigma - App Redesign"
-                width={460}
-                height={417}
-                className="object-cover"
+                className="object-cover h-full"
               />
             </div>
-            <div className="p-6 bg-orange-600 h-full">
+            <div className="p-10 bg-orange-600">
               <h3 className="font-bold text-xl mb-1 text-white">
                 GrillHouse by Sigma - <br />
                 App Redesign
@@ -144,17 +149,17 @@ export default function Home() {
           </div>
 
           {/* Project 3 */}
-          <div className="rounded-xl overflow-hidden border-2 border-blue-500 shadow-md bg-gradient-to-b from from-white to-blue-700">
-            <div className="h-64 relative overflow-hidden">
+          <div className="rounded-2xl overflow-hidden border-2 border-blue-500 shadow-md bg-gradient-to-b from from-white to-blue-700">
+            <div className="h-40 md:h-115 relative overflow-hidden">
               <Image
-                src="https://placehold.co/460x417/png"
+                src={BMOProject.src}
                 alt="BMO - US Wire Transfer"
-                width={460}
-                height={417}
-                className="object-cover"
+                width={417}
+                height={460}
+                className="object-cover h-full"
               />
             </div>
-            <div className="p-6 bg-blue-700 h-full">
+            <div className="p-10 bg-blue-700">
               <h3 className="font-bold text-xl mb-1 text-white">
                 BMO - <br />
                 US Wire Transfer
@@ -177,10 +182,10 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <Image
-              src="https://via.placeholder.com/300x400"
-              alt="Elizabeth Mayorga"
-              width={300}
-              height={400}
+              src={ElizabethMarshmallowAndCoffee.src}
+              alt="Elizabeth Mayorga enjoying a marshmallow and coffee"
+              width={390}
+              height={686}
               className="rounded-xl shadow-lg"
             />
           </div>
@@ -328,7 +333,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center text-gray-500 text-sm mt-16 pt-8 border-t border-gray-200">
+      <footer className="text-center text-gray-500 text-sm mt-16 pt-8">
         <p>Elizabeth Mayorga - 2025</p>
       </footer>
     </main>

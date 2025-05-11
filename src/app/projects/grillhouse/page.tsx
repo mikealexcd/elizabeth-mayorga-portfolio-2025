@@ -5,7 +5,36 @@ import { ProcessStep } from "@/components/case-study/process-step"
 import { InfoSection } from "@/components/case-study/info-card"
 import { ButtonLink } from "@/components/case-study/button-link"
 import { DeliverableItem } from "@/components/case-study/deliverable-item"
-import GrillhouseBanner from "@/assets/grillhouse-banner.jpg"
+import GrillhouseBanner from "@/assets/grillhouse/grillhouse-banner.jpg"
+import Step1Before1 from "@/assets/grillhouse/step-1-before-1.png"
+import Step1Before2 from "@/assets/grillhouse/step-1-before-2.png"
+import Step1After1 from "@/assets/grillhouse/step-1-after-1.png"
+import Step1After2 from "@/assets/grillhouse/step-1-after-2.png"
+import Step2Before1 from "@/assets/grillhouse/step-2-before-1.png"
+import Step2Before2 from "@/assets/grillhouse/step-2-before-2.png"
+import Step2After1 from "@/assets/grillhouse/step-2-after-1.png"
+import Step2After2 from "@/assets/grillhouse/step-2-after-2.png"
+import Step2After3 from "@/assets/grillhouse/step-2-after-3.png"
+import Step2After4 from "@/assets/grillhouse/step-2-after-4.png"
+import Step3Before1 from "@/assets/grillhouse/step-3-before-1.png"
+import Step3Before2 from "@/assets/grillhouse/step-3-before-2.png"
+import Step3Before3 from "@/assets/grillhouse/step-3-before-3.png"
+import Step3After1 from "@/assets/grillhouse/step-3-after-1.png"
+import Step3After2 from "@/assets/grillhouse/step-3-after-2.png"
+import Step3After3 from "@/assets/grillhouse/step-3-after-3.png"
+import Step3After4 from "@/assets/grillhouse/step-3-after-4.png"
+import Step3After5 from "@/assets/grillhouse/step-3-after-5.png"
+import Process21 from "@/assets/grillhouse/process-2-1.png"
+import Process22 from "@/assets/grillhouse/process-2-2.png"
+import Process23 from "@/assets/grillhouse/process-2-3.png"
+import Process24 from "@/assets/grillhouse/process-2-4.png"
+import Process31 from "@/assets/grillhouse/process-3-1.png"
+import Process32 from "@/assets/grillhouse/process-3-2.png"
+import Process33 from "@/assets/grillhouse/process-3-3.png"
+import Process34 from "@/assets/grillhouse/process-3-4.png"
+import Process41 from "@/assets/grillhouse/process-4-1.png"
+import Process42 from "@/assets/grillhouse/process-4-2.png"
+import Conclusion from "@/assets/grillhouse/conclusion.jpg"
 
 export default function GrillhouseCaseStudy() {
   return (
@@ -102,17 +131,17 @@ export default function GrillhouseCaseStudy() {
           <div className="flex gap-10 md:w-2/3">
             <Image
               alt="Original issue with the store assignment"
-              src="https://placehold.co/120x244/png"
+              src={Step1Before1}
               width={120}
               height={244}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
               alt="Original issue with the store assignment"
-              src="https://placehold.co/120x244/png"
+              src={Step1Before2}
               width={120}
               height={244}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -129,25 +158,18 @@ export default function GrillhouseCaseStudy() {
           </div>
           <div className="flex flex-wrap md:flex-nowrap gap-6 md:w-2/3">
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Solution for store assignment"
+              src={Step1After1}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Solution for store assignment"
+              src={Step1After2}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
-            />
-            <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
-              width={150}
-              height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -168,18 +190,18 @@ export default function GrillhouseCaseStudy() {
           </div>
           <div className="flex gap-10 md:w-2/3">
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/120x244/png"
+              alt="Checkout inefficiencies"
+              src={Step2Before1}
               width={120}
               height={244}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/120x244/png"
+              alt="Checkout inefficiencies"
+              src={Step2Before2}
               width={120}
               height={244}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -198,39 +220,32 @@ export default function GrillhouseCaseStudy() {
           </div>
           <div className="flex flex-wrap md:flex-nowrap gap-6 md:w-2/3">
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Improved checkout process"
+              src={Step2After1}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Improved checkout process"
+              src={Step2After2}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Improved checkout process"
+              src={Step2After3}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Improved checkout process"
+              src={Step2After4}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
-            />
-            <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
-              width={150}
-              height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -253,25 +268,25 @@ export default function GrillhouseCaseStudy() {
           </div>
           <div className="flex gap-10 md:w-2/3">
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/120x244/png"
+              alt="Feature discoverability issues"
+              src={Step3Before1}
               width={120}
               height={244}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/120x244/png"
+              alt="Feature discoverability issues"
+              src={Step3Before2}
               width={120}
               height={244}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/120x244/png"
+              alt="Feature discoverability issues"
+              src={Step3Before3}
               width={120}
               height={244}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -292,39 +307,39 @@ export default function GrillhouseCaseStudy() {
           </div>
           <div className="flex flex-wrap md:flex-nowrap gap-6 md:w-2/3">
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Enhanced feature discoverability"
+              src={Step3After1}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Enhanced feature discoverability"
+              src={Step3After2}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Enhanced feature discoverability"
+              src={Step3After3}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Enhanced feature discoverability"
+              src={Step3After4}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
             <Image
-              alt="Original issue with the store assignment"
-              src="https://placehold.co/150x323/png"
+              alt="Enhanced feature discoverability"
+              src={Step3After5}
               width={150}
               height={323}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -368,32 +383,32 @@ export default function GrillhouseCaseStudy() {
             </p>
             <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/266x189/png"
+                alt="Process step 2-1"
+                src={Process21}
                 width={266}
                 height={189}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/266x189/png"
+                alt="Process step 2-2"
+                src={Process22}
                 width={266}
                 height={189}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/266x189/png"
+                alt="Process step 2-3"
+                src={Process23}
                 width={266}
                 height={189}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/266x189/png"
+                alt="Process step 2-4"
+                src={Process24}
                 width={266}
                 height={189}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
             </div>
           </ProcessStep>
@@ -403,32 +418,32 @@ export default function GrillhouseCaseStudy() {
             </p>
             <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/151x203/png"
+                alt="Process step 3-1"
+                src={Process31}
                 width={151}
                 height={203}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/217x220/png"
+                alt="Process step 3-2"
+                src={Process32}
                 width={217}
                 height={220}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/423x169/png"
+                alt="Process step 3-3"
+                src={Process33}
                 width={423}
                 height={169}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/189x198/png"
+                alt="Process step 3-4"
+                src={Process34}
                 width={189}
                 height={198}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
             </div>
           </ProcessStep>
@@ -439,18 +454,18 @@ export default function GrillhouseCaseStudy() {
             </p>
             <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/538x146/png"
+                alt="Process step 4-1"
+                src={Process41}
                 width={538}
                 height={146}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
               <Image
-                alt="Original issue with the store assignment"
-                src="https://placehold.co/374x146/png"
+                alt="Process step 4-2"
+                src={Process42}
                 width={374}
                 height={146}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
             </div>
           </ProcessStep>
@@ -463,7 +478,7 @@ export default function GrillhouseCaseStudy() {
       </InfoSection>
 
       {/* Conclusion Section */}
-      <InfoSection title="What were my final thoughts and learning experiences?" subtitle="CONCLUSION" bgColor="bg-white" media={{ src: "https://placehold.co/300x500/png", alt: "Illustration of the conclusion", width: 300, height: 500 }}>
+      <InfoSection title="What were my final thoughts and learning experiences?" subtitle="CONCLUSION" bgColor="bg-white" media={{ src: Conclusion, alt: "Illustration of the conclusion", width: 300, height: 500 }} transparentMedia>
         <p className="text-gray-700 mb-4">
           Redesigning the Grillhouse mobile app was a pivotal experience in my early design career, offering invaluable lessons in cross-functional collaboration and the nuances of design handoff. Working closely with developers, I recognized the importance of clear communication and meticulous documentation to bridge the gap between design and development.
         </p>

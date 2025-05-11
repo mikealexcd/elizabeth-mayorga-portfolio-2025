@@ -5,9 +5,9 @@ import { ProcessStep } from "@/components/case-study/process-step"
 import { InfoSection } from "@/components/case-study/info-card"
 import { ButtonLink } from "@/components/case-study/button-link"
 import { DeliverableItem } from "@/components/case-study/deliverable-item"
-import BMOWireTransfersBanner from "@/assets/bmo-wire-banner.jpg"
-import BMOAirplane from "@/assets/bmo-airplane.png"
-import BMOChallenges from "@/assets/bmo-challenges.png"
+import BMOWireTransfersBanner from "@/assets/bmo/bmo-wire-banner.jpg"
+import BMOAirplane from "@/assets/bmo/bmo-airplane.png"
+import BMOChallenges from "@/assets/bmo/bmo-challenges.png"
 
 export default function BMOWireTransfersCaseStudy() {
   return (

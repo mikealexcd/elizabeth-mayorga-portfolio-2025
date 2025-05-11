@@ -5,7 +5,9 @@ import { ProcessStep } from "@/components/case-study/process-step"
 import { InfoSection } from "@/components/case-study/info-card"
 import { ButtonLink } from "@/components/case-study/button-link"
 import { DeliverableItem } from "@/components/case-study/deliverable-item"
-import KPMGBanner from "@/assets/kpmg-banner.jpg"
+import KPMGBanner from "@/assets/kpmg/kpmg-banner.jpg"
+import KPMGChallenge from "@/assets/kpmg/kpmg-challenge.png"
+import KPMGConclusion from "@/assets/kpmg/kpmg-conclusion.jpg"
 
 export default function KPMGCaseStudy() {
   return (
@@ -84,7 +86,7 @@ export default function KPMGCaseStudy() {
       </div>
 
       {/* Challenge Section */}
-      <InfoSection title="What was the challenge?" subtitle="PROBLEM" bgColor="bg-gray-100" className="mb-16" media={{ src: "https://placehold.co/300x200/png", alt: "Illustration of the challenge", width: 300, height: 200 }}>
+      <InfoSection title="What was the challenge?" subtitle="PROBLEM" bgColor="bg-gray-100" media={{ src: KPMGChallenge.src, alt: "", width: 314, height: 208 }} transparentMedia>
         <p className="text-gray-700">
           KPMG consultants often faced challenges in rapidly producing high-quality, tailored proposals. The
           manual process was time-consuming and prone to inconsistencies, impacting both efficiency and client
@@ -169,7 +171,7 @@ export default function KPMGCaseStudy() {
       </InfoSection>
 
       {/* Conclusion Section */}
-      <InfoSection title="What were my final thoughts and learning experiences?" subtitle="CONCLUSION" bgColor="bg-white" media={{ src: "https://placehold.co/300x500/png", alt: "Illustration of the conclusion", width: 300, height: 500 }}>
+      <InfoSection title="What were my final thoughts and learning experiences?" subtitle="CONCLUSION" bgColor="bg-white" media={{ src: KPMGConclusion, alt: "", width: 325, height: 514 }} transparentMedia>
         <p className="text-gray-700 mb-4">
           Collaborating with KPMG on this project provided a valuable opportunity to address complex user
           experience challenges within a large-scale enterprise environment. Through a user-centered design
