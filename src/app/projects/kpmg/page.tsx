@@ -56,19 +56,19 @@ export default function KPMGCaseStudy() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
               <SectionHeader title="OVERVIEW" />
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700 mb-4 ">
                 In response to the need for efficient and consistent proposal development, I led the design of a
                 generative AI-powered bot that streamlines the proposal creation process. This tool assists KPMG
                 consultants in drafting client proposals by leveraging a database of proposals while ensuring compliance
-                with their high standards.
+                with the company's standards.
               </p>
               <ButtonLink href="#prototype" variant="secondary" className="shadow-[2px_6px_0px_0px_#000000] mt-4">
-                CHECK OUT THE PROTOTYPE
+                CHECK OUT THE MOCKUPS
               </ButtonLink>
             </div>
             <div>
               <SectionHeader title="MY ROLE" />
-              <p className="text-gray-700 mb-4">Led the design of this bot while collaborating with key stakeholders.</p>
+              <p className="text-gray-700 mb-2">Led the design of this bot while collaborating with key stakeholders.</p>
               <SectionHeader title="DELIVERABLES" className="mt-8" />
               <ul>
                 <DeliverableItem text="User Journey" />
@@ -93,39 +93,30 @@ export default function KPMGCaseStudy() {
       {/* Solution Section */}
       <InfoSection title="How did I approach this?" subtitle="SOLUTION" bgColor="bg-white">
         <p>
-          I developed a solution that could utilize inputs from the consultants and generate it against the large
-          database of existing proposals to generate proposals that meet KPMG's quality expectations, considering
-          various structured data aligned with KPMG's branding and compliance requirements. The system ensures data
-          security by operating within KPMG's protected environment. I also followed their existing design system
-          components with some enhancements based on development updates.
+          I developed a solution that leverages documents provided by consultants and compares them against a large database of existing proposals to generate new ones that meet KPMG's quality standards. The system incorporates structured data while aligning with KPMG’s branding and compliance requirements. To ensure data security, it operates entirely within KPMG’s protected environment. I also followed their existing design system components, introducing enhancements based on recent development updates.
         </p>
       </InfoSection>
 
       {/* Results Section */}
       <InfoSection title="What were the results?" subtitle="OUTCOME" bgColor="bg-gray-100">
         <p>
-          While I was told from the beginning that my contract was going to be short and just stayed enough to receive
-          questions and early feedback from the team, the initial reception was highly positive. The bot was
-          recognized for its potential to streamline proposal creation and improve consistency. This experience
-          reinforced the importance of aligning design solutions with both user needs and organizational goals.
+          While I was told from the beginning that my contract would be short, just long enough to gather questions and early feedback from the team, the initial reception was highly positive. The bot was recognized for its potential to streamline proposal creation and improve consistency. I was glad to learn that development had begun shortly after my engagement ended. This experience reinforced the importance of aligning design solutions with both user needs and organizational goals, and I look forward to seeing how the product evolves over time.
         </p>
       </InfoSection>
 
       {/* Process Section */}
-      <InfoSection title="What are my steps while I design?" subtitle="THE PROCESS" bgColor="bg-white">
+      <InfoSection title="What were my steps while designing?" subtitle="THE PROCESS" bgColor="bg-white">
         <div className="mt-8">
           <ProcessStep number={1} title="Discovery & Research">
             <p>
-              I began by meeting with consultants and proposal writers to understand their workflows and challenges in
-              creating client proposals. Through interviews and collaborative sessions, I identified key pain points,
-              such as time-consuming manual drafting and inconsistencies in proposal formatting.
+              To better understand the workflows and challenges involved in creating client proposals, I met with the team to explore improvements in the proposal process. These conversations revealed key pain points, such as time-consuming manual drafting and inconsistencies in formatting. This context helped shape a solution focused on streamlining the experience while ensuring consistency and alignment with the company's standards.
             </p>
           </ProcessStep>
           <ProcessStep number={2} title="Defining the Problem">
             <p>
               The insights gathered highlighted a need for a streamlined, consistent, and efficient method for
-              generating client proposals that adheres to KPMG's quality standards. Problem statement: "How might we
-              enable KPMG consultants to create high-quality, tailored client proposals in a fraction of the time
+              generating client proposals that adheres to KPMG's quality standards. How might we
+              enable KPMG consultants to the perfect proposal, with tailored client information in a fraction of the time
               without compromising on quality or brand standards?"
             </p>
           </ProcessStep>
@@ -145,7 +136,7 @@ export default function KPMGCaseStudy() {
           </ProcessStep>
           <ProcessStep number={5} title="Design Handoff & Documentation">
             <p>
-              Although my tenure concluded before the implementation and testing phases, I ensured a smooth transition
+              Although my tenure concluded before the complete implementation and testing phases, I ensured a smooth transition
               by providing comprehensive design documentation. This included annotated wireframes, user flow diagrams,
               and interaction guidelines to support the development team in bringing the solution to fruition.
             </p>
@@ -155,7 +146,7 @@ export default function KPMGCaseStudy() {
 
       {/* Prototype Section */}
 
-      <InfoSection title="Feel free to explore the prototypes for desktop and mobile" subtitle="PROTOTYPE" bgColor="bg-gray-600" id="prototype" className="text-white">
+      <InfoSection title="Explore final screens for desktop and mobile" subtitle="MOCKUPS - PROTOTYPE COMING SOON" bgColor="bg-gray-600" id="prototype" className="text-white">
         <div className="w-full mt-8">
           <Image
             alt="KPMG Proposal Generation Bot on desktop"
@@ -202,7 +193,7 @@ export default function KPMGCaseStudy() {
             <span className="text-emerald-500 mr-2">•</span>
             <span>
               <strong>User-Centered Approach:</strong> Keeping the end-user at the center was fundamental in
-              creating intuitive and accessible interfaces that align with KPMG's commitment to excellence.
+              creating intuitive and accessible interfaces that align with KPMG's standards.
             </span>
           </li>
         </ul>
