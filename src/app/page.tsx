@@ -31,7 +31,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row gap-8 justify-between items-center mb-24">
+      <section className="flex flex-col mt-20 mb-40 md:flex-row gap-8 justify-between items-center md:mt-40 md:mb-40">
         <div className="max-w-3xl">
           <p className="text-gray-600 mb-2">Welcome to my portfolio!</p>
           <h1 className="text-2xl md:text-4xl font-bold mb-3">
