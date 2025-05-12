@@ -80,7 +80,7 @@ export default function BMOWireTransfersCaseStudy() {
       </div>
 
       {/* Challenge Section */}
-      <InfoSection title="Business team and I identified a few challenges" subtitle="PROBLEM" bgColor="bg-gray-100" className="mb-16" media={{ src: BMOChallenges.src, alt: "Illustration of the challenges", width: 500, height: 359 }} transparentMedia>
+      <InfoSection title="Business team and I identified a few challenges" subtitle="PROBLEM" bgColor="bg-gray-100" media={{ src: BMOChallenges.src, alt: "Illustration of the challenges", width: 500, height: 359 }} transparentMedia>
         <ul>
           <li className="flex items-start mb-2">
             <span className="mr-2">•</span>
@@ -98,7 +98,7 @@ export default function BMOWireTransfersCaseStudy() {
       </InfoSection>
 
       {/* Solution Section */}
-      <InfoSection title="What did we do?" subtitle="SOLUTION" bgColor="bg-white">
+      <InfoSection title="What was our approach?" subtitle="SOLUTION" bgColor="bg-white">
         <ul>
           <li className="flex items-start mb-2">
             <span className="mr-2">•</span>
@@ -142,11 +142,11 @@ export default function BMOWireTransfersCaseStudy() {
       </InfoSection>
 
       {/* Process Section */}
-      <InfoSection title="What are my steps while I design?" subtitle="THE PROCESS" bgColor="bg-white">
+      <InfoSection title="What is my design process?" subtitle="THE PROCESS" bgColor="bg-white">
         <div className="mt-8">
           <ProcessStep number={1} title="Discovery & Research" bgColor="bg-blue-500">
             <p>
-              Reviewed existing West Coast customer behaviour and branch wire logs. Gathered insights from the existing business team to understand what they were trying to achieve with this new feature. At BMO, we used a template called Phase 0 which helped us gather important information from relevant stakeholders making sure that we were missing any important information.
+              Reviewed existing West Coast customer behaviour and branch wire logs. Gathered insights from the existing business team to understand what they were trying to achieve with this new feature. At BMO, we used a template called Phase 0 which helped us gather information from relevant stakeholders making sure that we weren't missing anything crucial.
             </p>
           </ProcessStep>
           <ProcessStep number={2} title="Defining the Problem" bgColor="bg-blue-500">
@@ -156,17 +156,17 @@ export default function BMOWireTransfersCaseStudy() {
           </ProcessStep>
           <ProcessStep number={3} title="Ideation & Concept Development" bgColor="bg-blue-500">
             <p>
-              Designed multiple flows with clear instructions, progress indicators, and confirmation steps to increase user confidence. In this case, I like to present wireframes and mockups in separate meetings first focusing only on the UX and not looking into the UI so that I could understand that the journey was intuitive and so that then we could only focus on our UI and the existing design system.
+              I designed multiple flows with clear instructions, progress indicators, and confirmation steps to increase user confidence. In this case, I preferred to present wireframes and mockups in separate meetings, initially focusing only on UX to ensure the user journey felt intuitive. This allowed us to later dedicate our attention to refining the UI and aligning it with the existing design system.
             </p>
           </ProcessStep>
           <ProcessStep number={4} title="Wireframing & Prototyping" bgColor="bg-blue-500">
             <p>
-              Ran usability tests to refine copy, error handling, and user guidance through the journey. Testing was short due to time constraints but we made sure to do the best with what we had.
+              Ran usability tests to refine copy, error handling, and user guidance through the journey. Testing was short due to time constraints, but we made sure to do the best with what we had.
             </p>
           </ProcessStep>
           <ProcessStep number={5} title="Design Handoff & Documentation" bgColor="bg-blue-500">
             <p>
-              Using Figma, during our daily standups, I made sure to provide as much information to our developers in order to ensure visual consistency. This range from discussing existing design components to enhancing new components and even teaching them how to navigate Figma in dev mode.
+              Using Figma, I regularly shared detailed design guidance during our daily standups to help ensure visual consistency. This included walking developers through existing components, collaborating on enhancements for new ones, and even guiding them on how to navigate Figma's Dev Mode effectively.
             </p>
           </ProcessStep>
         </div>
@@ -194,7 +194,7 @@ export default function BMOWireTransfersCaseStudy() {
       {/* Conclusion Section */}
       <InfoSection title="What were my final thoughts and learning experiences?" subtitle="CONCLUSION" bgColor="bg-white" media={{ src: BMOAirplane.src, alt: "", width: 197, height: 167 }} transparentMedia>
         <p className="text-gray-700 mb-4">
-          We successfully got to the goals we had at the beginning of this project. This project taught me how to work across complex, regulated environments while still advocating for simple, intuitive design. I learned how to break down a high-risk, high-friction task like wire transfers into digestible steps users feel confident completing. Collaborating with developers to ensure visual consistency and behaviour across devices also made me more thoughtful in how I document and support handoffs — especially across a multiple stakeholders.
+          We successfully got to the goals we had at the beginning of this project. This project provided me with experience to how to work across complex, regulated environments while still advocating for simple, intuitive design. I learned how to break down a high-risk, high-friction task like wire transfers into digestible steps users feel confident completing.
         </p>
       </InfoSection>
 
