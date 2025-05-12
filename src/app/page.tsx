@@ -1,19 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import ElizabethPortrait from "@/assets/homepage/elizabeth-portrait.png";
-import ElizabethMarshmallowAndCoffee from "@/assets/homepage/elizabeth-marshmallow-coffee.jpg";
+import AboutElizabeth from "@/assets/homepage/elizabeth-about-2.jpg";
 import KPMGProject from "@/assets/homepage/kpmg-project.jpg";
 import GrillHouseProject from "@/assets/homepage/grillhouse-project.jpg";
 import BMOProject from "@/assets/homepage/bmo-project.jpg";
+import Logo from "@/assets/logo";
 
 export default function Home() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
       {/* Header */}
       <header className="flex justify-between items-center mb-16">
-        <div className="font-bold text-xl">
-          MAYORGA<span className="text-emerald-500">*</span>
-        </div>
+        <Logo />
+
         <nav className="flex gap-8">
           <Link
             href="#projects"
@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="mb-24">
+      <section id="projects" className="mb-24 scroll-m-8">
         <h2 className="text-3xl font-bold mb-8">My projects</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {/* Project 1 */}
@@ -182,8 +182,8 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <Image
-              src={ElizabethMarshmallowAndCoffee.src}
-              alt="Elizabeth Mayorga enjoying a marshmallow and coffee"
+              src={AboutElizabeth.src}
+              alt="Elizabeth Mayorga enjoying her birthday with Silver"
               width={390}
               height={686}
               className="rounded-xl shadow-lg"
@@ -219,41 +219,41 @@ export default function Home() {
                 <div>
                   <ul className="space-y-2">
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> User
+                      <span className="text-black mr-2">•</span> User
                       Empathy
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Product
+                      <span className="text-black mr-2">•</span> Product
                       Thinking
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> User
+                      <span className="text-black mr-2">•</span> User
                       Research
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Leadership
+                      <span className="text-black mr-2">•</span> Leadership
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Rapid
+                      <span className="text-black mr-2">•</span> Rapid
                       Prototyping
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Wireframing
+                      <span className="text-black mr-2">•</span> Wireframing
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Information
+                      <span className="text-black mr-2">•</span> Information
                       Architecture
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Interaction
+                      <span className="text-black mr-2">•</span> Interaction
                       Design
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Design
+                      <span className="text-black mr-2">•</span> Design
                       Systems
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span>{" "}
+                      <span className="text-black mr-2">•</span>{" "}
                       Accessibility Standards
                     </li>
                   </ul>
@@ -261,39 +261,39 @@ export default function Home() {
                 <div>
                   <ul className="space-y-2 mt-2 sm:mt-0">
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Responsive
+                      <span className="text-black mr-2">•</span> Responsive
                       & Mobile Design
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Workshop
+                      <span className="text-black mr-2">•</span> Workshop
                       Facilitation
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span>{" "}
+                      <span className="text-black mr-2">•</span>{" "}
                       Cross-functional Teamwork
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Design
+                      <span className="text-black mr-2">•</span> Design
                       Documentation
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Data-driven
+                      <span className="text-black mr-2">•</span> Data-driven
                       Design Decisions
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Agile &
+                      <span className="text-black mr-2">•</span> Agile &
                       Lean UX Methodologies
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Design
+                      <span className="text-black mr-2">•</span> Design
                       Tools (e.g., Figma, Adobe Creative Suite, Miro, Notion)
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span> Continuous
+                      <span className="text-black mr-2">•</span> Continuous
                       Learning & Adaptability
                     </li>
                     <li className="flex items-start">
-                      <span className="text-emerald-500 mr-2">•</span>{" "}
+                      <span className="text-black mr-2">•</span>{" "}
                       Problem-solving & Critical Thinking
                     </li>
                   </ul>

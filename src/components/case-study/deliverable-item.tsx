@@ -5,7 +5,7 @@ interface DeliverableItemProps {
 export function DeliverableItem({ text }: DeliverableItemProps) {
   return (
     <li className="flex items-start mb-2">
-      <span className="text-emerald-500 mr-2">•</span>
+      <span className="text-black mr-2">•</span>
       {text}
     </li>
   )

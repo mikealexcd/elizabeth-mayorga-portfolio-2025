@@ -13,8 +13,8 @@ export default function BMOWireTransfersCaseStudy() {
   return (
     <main className="bg-white">
       {/* Navigation */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center text-blue-900">
+      <div className="max-w-7xl mx-auto px-4 md:px-0 py-4 flex justify-between items-center">
+        <Link href="/" className="flex items-center text-black">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -29,16 +29,8 @@ export default function BMOWireTransfersCaseStudy() {
           >
             <path d="M19 12H5M12 19l-7-7 7-7" />
           </svg>
-          Back
+          Back to homepage
         </Link>
-        <div className="flex gap-8">
-          <Link href="/#projects" className="hover:text-blue-900 transition-colors">
-            My projects
-          </Link>
-          <Link href="/#about" className="hover:text-blue-900 transition-colors">
-            About me
-          </Link>
-        </div>
       </div>
 
       {/* Banner */}

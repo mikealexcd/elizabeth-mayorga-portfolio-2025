@@ -8,13 +8,15 @@ import { DeliverableItem } from "@/components/case-study/deliverable-item"
 import KPMGBanner from "@/assets/kpmg/kpmg-banner.jpg"
 import KPMGChallenge from "@/assets/kpmg/kpmg-challenge.png"
 import KPMGConclusion from "@/assets/kpmg/kpmg-conclusion.jpg"
+import KPMGMockups from "@/assets/kpmg/kpmg-mockups-desktop.png"
+import KPMGMockupsMobile from "@/assets/kpmg/kpmg-mockups-mobile.png"
 
 export default function KPMGCaseStudy() {
   return (
     <main className="bg-white">
       {/* Navigation */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center text-blue-900">
+      <div className="max-w-7xl mx-auto px-4 md:px-0 py-4 flex justify-between items-center">
+        <Link href="/" className="flex items-center text-black">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -29,16 +31,8 @@ export default function KPMGCaseStudy() {
           >
             <path d="M19 12H5M12 19l-7-7 7-7" />
           </svg>
-          Back
+          Back to homepage
         </Link>
-        <div className="flex gap-8">
-          <Link href="/#projects" className="hover:text-blue-900 transition-colors">
-            My projects
-          </Link>
-          <Link href="/#about" className="hover:text-blue-900 transition-colors">
-            About me
-          </Link>
-        </div>
       </div>
 
       {/* Banner */}
@@ -161,14 +155,21 @@ export default function KPMGCaseStudy() {
 
       {/* Prototype Section */}
 
-      <InfoSection title="Feel free to explore the prototypes for desktop and mobile" subtitle="PROTOTYPE" bgColor="bg-gray-900" id="prototype" className="text-white">
-        <div className="flex flex-col md:flex-row gap-6 mt-8">
-          <div className="bg-gray-900 h-auto rounded-lg flex items-center justify-center">
-            <iframe width="800" height="450" src="https://embed.figma.com/proto/7NVakQOksvlL2CPTyeZE8X/KPMG---Gen-Bot?node-id=168-3028&embed-host=share&scaling=contain&footer=false" allowFullScreen></iframe>
-          </div>
-          <div className="bg-gray-900 h-auto rounded-lg flex items-center justify-center">
-            <iframe width="400" height="450" src="https://embed.figma.com/proto/7NVakQOksvlL2CPTyeZE8X/KPMG---Gen-Bot?node-id=179-11753&scaling=scale-down&content-scaling=fixed&page-id=74%3A1456&starting-point-node-id=179%3A11753&embed-host=share&scaling=contain&footer=false" allowFullScreen></iframe>
-          </div>
+      <InfoSection title="Feel free to explore the prototypes for desktop and mobile" subtitle="PROTOTYPE" bgColor="bg-gray-600" id="prototype" className="text-white">
+        <div className="w-full mt-8">
+          <Image
+            alt="KPMG Proposal Generation Bot on desktop"
+            src={KPMGMockups.src}
+            width={3024}
+            height={800}
+            className="mb-4"
+          />
+          <Image
+            alt="KPMG Proposal Generation Bot on mobile devices"
+            src={KPMGMockupsMobile.src}
+            width={3024}
+            height={800}
+          />
         </div>
       </InfoSection>
 
