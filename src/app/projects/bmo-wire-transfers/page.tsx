@@ -45,8 +45,10 @@ export default function BMOWireTransfersCaseStudy() {
       <div className="w-full">
         <div className="flex justify-center">
           <Image
+            src={BMOWireTransfersBanner.src}
             alt="Mockups in frames of BMO Wire Transfers on desktop and mobile devices"
-            {...BMOWireTransfersBanner}
+            width={3024}
+            height={800}
           />
         </div>
       </div>
@@ -86,7 +88,7 @@ export default function BMOWireTransfersCaseStudy() {
       </div>
 
       {/* Challenge Section */}
-      <InfoSection title="Business team and I identified a few challenges" subtitle="PROBLEM" bgColor="bg-gray-100" className="mb-16" media={{ ...BMOChallenges, alt: "Illustration of the challenges" }} transparentMedia>
+      <InfoSection title="Business team and I identified a few challenges" subtitle="PROBLEM" bgColor="bg-gray-100" className="mb-16" media={{ src: BMOChallenges.src, alt: "Illustration of the challenges", width: 500, height: 359 }} transparentMedia>
         <ul>
           <li className="flex items-start mb-2">
             <span className="mr-2">•</span>
@@ -181,18 +183,24 @@ export default function BMOWireTransfersCaseStudy() {
       {/* Prototype Section */}
 
       <InfoSection title="Feel free to explore the prototypes for desktop and mobile" subtitle="PROTOTYPE" bgColor="bg-gray-900" id="prototype" className="text-white">
-        <div className="grid md:grid-cols-2 gap-6 mt-8">
-          <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">Desktop Prototype</p>
+        <div className="flex flex-col md:flex-row gap-6 mt-8">
+          <div className="bg-gray-900 h-auto rounded-lg flex items-center justify-center">
+            <iframe
+              style={{ border: "1px solid transparent" }}
+              width="800"
+              height="450"
+              src="https://embed.figma.com/proto/4TJNhoBHwQcpDQeouQ9r0W/Wire-Transfer---US?node-id=425-5814&scaling=contain&content-scaling=fixed&page-id=315%3A7770&starting-point-node-id=425%3A5814&embed-host=share&footer=false"
+              allowFullScreen
+            ></iframe>
           </div>
-          <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">Mobile Prototype</p>
+          <div className="bg-gray-900 h-auto rounded-lg flex items-center justify-center">
+            <iframe style={{ border: "1px solid transparent" }} width="400" height="450" src="https://embed.figma.com/proto/4TJNhoBHwQcpDQeouQ9r0W/Wire-Transfer---US?node-id=1238-23136&scaling=scale-down&content-scaling=fixed&page-id=1238%3A23131&starting-point-node-id=1238%3A23136&embed-host=share&footer=false" allowFullScreen></iframe>
           </div>
         </div>
       </InfoSection>
 
       {/* Conclusion Section */}
-      <InfoSection title="What were my final thoughts and learning experiences?" subtitle="CONCLUSION" bgColor="bg-white" media={{ ...BMOAirplane, alt: "" }} transparentMedia>
+      <InfoSection title="What were my final thoughts and learning experiences?" subtitle="CONCLUSION" bgColor="bg-white" media={{ src: BMOAirplane.src, alt: "", width: 197, height: 167 }} transparentMedia>
         <p className="text-gray-700 mb-4">
           We successfully got to the goals we had at the beginning of this project. This project taught me how to work across complex, regulated environments while still advocating for simple, intuitive design. I learned how to break down a high-risk, high-friction task like wire transfers into digestible steps users feel confident completing. Collaborating with developers to ensure visual consistency and behaviour across devices also made me more thoughtful in how I document and support handoffs — especially across a multiple stakeholders.
         </p>

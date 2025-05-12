@@ -46,7 +46,9 @@ export default function KPMGCaseStudy() {
         <div className="flex justify-center">
           <Image
             alt="KPMG Proposal Generation Bot on desktop and mobile devices"
-            {...KPMGBanner}
+            src={KPMGBanner.src}
+            width={3024}
+            height={800}
           />
         </div>
       </div>
@@ -160,12 +162,12 @@ export default function KPMGCaseStudy() {
       {/* Prototype Section */}
 
       <InfoSection title="Feel free to explore the prototypes for desktop and mobile" subtitle="PROTOTYPE" bgColor="bg-gray-900" id="prototype" className="text-white">
-        <div className="grid md:grid-cols-2 gap-6 mt-8">
-          <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">Desktop Prototype</p>
+        <div className="flex flex-col md:flex-row gap-6 mt-8">
+          <div className="bg-gray-900 h-auto rounded-lg flex items-center justify-center">
+            <iframe width="800" height="450" src="https://embed.figma.com/proto/7NVakQOksvlL2CPTyeZE8X/KPMG---Gen-Bot?node-id=168-3028&embed-host=share&scaling=contain&footer=false" allowFullScreen></iframe>
           </div>
-          <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">Mobile Prototype</p>
+          <div className="bg-gray-900 h-auto rounded-lg flex items-center justify-center">
+            <iframe width="400" height="450" src="https://embed.figma.com/proto/7NVakQOksvlL2CPTyeZE8X/KPMG---Gen-Bot?node-id=179-11753&scaling=scale-down&content-scaling=fixed&page-id=74%3A1456&starting-point-node-id=179%3A11753&embed-host=share&scaling=contain&footer=false" allowFullScreen></iframe>
           </div>
         </div>
       </InfoSection>

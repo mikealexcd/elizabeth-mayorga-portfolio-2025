@@ -73,7 +73,9 @@ export default function GrillhouseCaseStudy() {
         <div className="flex justify-center">
           <Image
             alt="Collection of screens for the Grillhouse mobile app"
-            {...GrillhouseBanner}
+            src={GrillhouseBanner.src}
+            width={3024}
+            height={800}
           />
         </div>
       </div>

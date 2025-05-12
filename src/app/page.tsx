@@ -43,7 +43,7 @@ export default function Home() {
             experiences that make people&apos;s lives easier.
           </p>
           <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/elizabeth-mayorga/"
             className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
           >
             Connect with me on LinkedIn{" "}
