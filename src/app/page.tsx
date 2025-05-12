@@ -131,7 +131,7 @@ export default function Home() {
                 className="object-cover h-full"
               />
             </div>
-            <div className="p-7 bg-black h-full md:p-9">
+            <div className="p-7 bg-orange-700 h-full md:p-9">
               <h3 className="font-bold text-xl mb-1 text-white">
                 GrillHouse by Sigma - <br />
                 App Redesign
