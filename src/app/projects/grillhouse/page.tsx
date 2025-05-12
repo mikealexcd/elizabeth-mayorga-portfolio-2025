@@ -10,12 +10,14 @@ import Step1Before1 from "@/assets/grillhouse/step-1-before-1.png"
 import Step1Before2 from "@/assets/grillhouse/step-1-before-2.png"
 import Step1After1 from "@/assets/grillhouse/step-1-after-1.png"
 import Step1After2 from "@/assets/grillhouse/step-1-after-2.png"
+import Step1After3 from "@/assets/grillhouse/step-1-after-3.png"
 import Step2Before1 from "@/assets/grillhouse/step-2-before-1.png"
 import Step2Before2 from "@/assets/grillhouse/step-2-before-2.png"
 import Step2After1 from "@/assets/grillhouse/step-2-after-1.png"
 import Step2After2 from "@/assets/grillhouse/step-2-after-2.png"
 import Step2After3 from "@/assets/grillhouse/step-2-after-3.png"
 import Step2After4 from "@/assets/grillhouse/step-2-after-4.png"
+import Step2After5 from "@/assets/grillhouse/step-2-after-5.png"
 import Step3Before1 from "@/assets/grillhouse/step-3-before-1.png"
 import Step3Before2 from "@/assets/grillhouse/step-3-before-2.png"
 import Step3Before3 from "@/assets/grillhouse/step-3-before-3.png"
@@ -87,7 +89,7 @@ export default function GrillhouseCaseStudy() {
             </div>
             <div>
               <SectionHeader title="MY ROLE" />
-              <p className="text-gray-700 mb-4">Led the end-to-end redesign process, from user research to high-fidelity prototyping</p>
+              <p className="text-gray-700 mb-4">Led the end-to-end redesign process, from user research to high-fidelity prototyping.</p>
               <SectionHeader title="DELIVERABLES" className="mt-8" />
               <ul className="grid md:grid-cols-2">
                 <DeliverableItem text="User Personas" />
@@ -105,7 +107,7 @@ export default function GrillhouseCaseStudy() {
       </div>
 
       {/* Challenges and Solutions Section */}
-      <InfoSection title="What were the main problems?" subtitle="CHALLENGES AND SOLUTIONS" bgColor="bg-gray-100">
+      <InfoSection title="What were the main problems and how did we fix them?" subtitle="CHALLENGES AND SOLUTIONS" bgColor="bg-gray-100">
         <p>
           My team and I identified several user experience issues on the existing app that hindered customer satisfaction and operational efficiency. These are some of the most relevant issues that we found that impacted the overall app redesign the most.
         </p>
@@ -115,7 +117,7 @@ export default function GrillhouseCaseStudy() {
           <div className="md:w-1/3">
             <div>Original Issue (Before):
               <ul>
-                <li className="flex items-start mb-2">
+                <li className="flex items-start mb-2 mt-2">
                   <span className="mr-2">•</span>
                   The original app would assign a specific store within Mexico to all users, regardless of where the user was located within the country. Also, changing the assigned store on the app was not an intuitive process. If they proceeded to order in the incorrect location, they would have to reorder through the correct store.
                 </li>
@@ -143,9 +145,9 @@ export default function GrillhouseCaseStudy() {
           <div className="md:w-1/3">
             <div>Solution (After):
               <ul>
-                <li className="flex items-start mb-2">
+                <li className="flex items-start mb-2 mt-2">
                   <span className="mr-2">•</span>
-                  Users get assigned to the correct store as per their ZIP code which they introduce during the onboarding process. If they were to change it at any point, they could do so by clicking the current ZIP code field that is located as a fixed position in the header. The store would then change accordingly if needed.
+                  Users get assigned to the correct store as per their ZIP code which they introduce during the onboarding process. If they were to change it at any point, they could do so by clicking the current ZIP code field that is located as a fixed position in the header of the homepage. The store would then change accordingly if needed.
                 </li>
               </ul>
             </div>
@@ -165,6 +167,13 @@ export default function GrillhouseCaseStudy() {
               height={323}
               className="rounded-lg"
             />
+            <Image
+              alt="Solution for store assignment"
+              src={Step1After3}
+              width={150}
+              height={323}
+              className="rounded-lg"
+            />
           </div>
         </div>
         {/* Step 2 */}
@@ -173,16 +182,25 @@ export default function GrillhouseCaseStudy() {
           <div className="md:w-1/3">
             <div>Original Issue (Before):
               <ul>
-                <li className="flex items-start mb-2">
+                <li className="flex items-start mb-2 mt-2">
                   <span className="mr-2">•</span>
                   Customers couldn't easily access tracking information post-purchase.
+                </li>
+                <li className="flex items-start mb-2">
+                  <span className="mr-2">•</span>
+
                   The checkout process lacked visual cues and progress indicators.
+
+                </li>
+                <li className="flex items-start mb-2">
+                  <span className="mr-2">•</span>
                   Users had to re-enter delivery and payment details for each order.
                 </li>
+
               </ul>
             </div>
           </div>
-          <div className="flex gap-10 md:w-2/3">
+          <div className="flex flex-wrap md:flex-nowrap gap-10 md:w-2/3">
             <Image
               alt="Checkout inefficiencies"
               src={Step2Before1}
@@ -203,10 +221,18 @@ export default function GrillhouseCaseStudy() {
           <div className="md:w-1/3">
             <div>Solution (After):
               <ul>
-                <li className="flex items-start mb-2">
+                <li className="flex items-start mb-2 mt-2">
                   <span className="mr-2">•</span>
-                  Implemented a dedicated order tracking section accessible from the main menu, offering real-time updates on order status.
+                  Implemented a dedicated order tracking section accessible from the homepage after placing an order, offering real-time updates on order status.
+
+                </li><li className="flex items-start mb-2">
+                  <span className="mr-2">•</span>
+
                   Introduced a progress bar in the checkout process to provide visual cues.
+
+                </li><li className="flex items-start mb-2">
+                  <span className="mr-2">•</span>
+
                   Additionally, enabled users to save multiple addresses and payment methods for a streamlined checkout process.
                 </li>
               </ul>
@@ -241,6 +267,13 @@ export default function GrillhouseCaseStudy() {
               height={323}
               className="rounded-lg"
             />
+            <Image
+              alt="Improved checkout process"
+              src={Step2After5}
+              width={150}
+              height={323}
+              className="rounded-lg"
+            />
           </div>
         </div>
         {/* Step 3 */}
@@ -249,7 +282,7 @@ export default function GrillhouseCaseStudy() {
           <div className="md:w-1/3">
             <div>Original Issue (Before):
               <ul>
-                <li className="flex items-start mb-2">
+                <li className="flex items-start mb-2 mt-2">
                   <span className="mr-2">•</span>
                   Additional app features were hidden and not easily discoverable.
                 </li>
@@ -260,7 +293,7 @@ export default function GrillhouseCaseStudy() {
               </ul>
             </div>
           </div>
-          <div className="flex gap-10 md:w-2/3">
+          <div className="flex flex-wrap md:flex-nowrap gap-10 md:w-2/3">
             <Image
               alt="Feature discoverability issues"
               src={Step3Before1}
@@ -288,7 +321,7 @@ export default function GrillhouseCaseStudy() {
           <div className="md:w-1/3">
             <div>Solution (After):
               <ul>
-                <li className="flex items-start mb-2">
+                <li className="flex items-start mb-2 mt-2">
                   <span className="mr-2">•</span>
                   Redesigned the navigation to highlight additional features such as  the recipes and exploring meat cut options, ensuring they are easily accessible to users.
                 </li>
@@ -373,7 +406,7 @@ export default function GrillhouseCaseStudy() {
           </ProcessStep>
           <ProcessStep number={2} title="Competitive Analysis & User Personas" bgColor="bg-orange-600">
             <p className="mb-4">
-              Analyzed similar e-commerce and food delivery apps to identify best practices and areas for improvement. With the help of our research process we also identified our two types of user personas.
+              Analyzed similar e-commerce and food delivery apps to identify best practices and areas for improvement. With the help of our research process, we also identified our two types of user personas.
             </p>
             <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
               <Image
@@ -408,7 +441,7 @@ export default function GrillhouseCaseStudy() {
           </ProcessStep>
           <ProcessStep number={3} title="Ideation" bgColor="bg-orange-600">
             <p className="mb-4">
-              Developed wireframes focusing on intuitive navigation, streamlined checkout, and prominent feature placement. I presented this to the key stakeholders involved to make sure we were on the right track.
+              Worked on the information architecture and did some brainstorming with my team to focus on intuitive navigation, streamlined checkout, and prominent feature placement. I presented this to the key stakeholders involved to make sure we were on the right track.
             </p>
             <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
               <Image
@@ -443,7 +476,7 @@ export default function GrillhouseCaseStudy() {
           </ProcessStep>
           <ProcessStep number={4} title="Wireframing & Prototyping" bgColor="bg-orange-600">
             <p className="mb-4">
-              Developed wireframes focusing on intuitive navigation, streamlined checkout, and prominent feature placement. I presented this to the key stakeholders involved to make sure we were on the right track.
+              Following ideation, we translated our concepts into low-fidelity wireframes to outline the app's structure and user flows. These wireframes focused on layout and functionality, allowing for early feedback and adjustments. We also developed high-fidelity prototypes to simulate the user experience more realistically. These prototypes incorporated visual design elements and interactive components, facilitating usability testing and stakeholder demonstrations.
 
             </p>
             <div className="flex flex-wrap md:flex-nowrap justify-center gap-6">
@@ -465,7 +498,7 @@ export default function GrillhouseCaseStudy() {
           </ProcessStep>
           <ProcessStep number={5} title="Design Handoff" bgColor="bg-orange-600">
             <p>
-              Prepared comprehensive design documentation and assets for the development team to ensure a smooth implementation process.
+              To facilitate this, we utilized Zeplin to share detailed design specifications efficiently. Recognizing potential challenges, we also provided supplementary files outlining common specifications, ensuring developers had consistent references for elements like spacing, shadows, and borders. This proactive approach minimized ambiguities and streamlined the development process.
             </p>
           </ProcessStep>
         </div>
@@ -476,9 +509,7 @@ export default function GrillhouseCaseStudy() {
         <p className="text-gray-700 mb-4">
           Redesigning the Grillhouse mobile app was a pivotal experience in my early design career, offering invaluable lessons in cross-functional collaboration and the nuances of design handoff. Working closely with developers, I recognized the importance of clear communication and meticulous documentation to bridge the gap between design and development.
         </p>
-        <p className="text-gray-700 mb-4">
-          To facilitate this, we utilized Zeplin to share detailed design specifications efficiently. Recognizing potential challenges, we also provided supplementary files outlining common specifications, ensuring developers had consistent references for elements like spacing, shadows, and border radii. This proactive approach minimized ambiguities and streamlined the development process.
-        </p>
+
 
         <h3 className="font-bold mt-6 mb-2">Key Takeaways:</h3>
         <ul className="space-y-2">
@@ -504,7 +535,7 @@ export default function GrillhouseCaseStudy() {
 
         <p className="mt-6 text-gray-700">
           This experience reinforced the importance of adaptability, clear communication, and a deep understanding
-          of user needs in delivering effective design solutions within complex organizational structures.
+          of user needs in delivering effective design solutions within complex user experiences.
         </p>
       </InfoSection>
 
