@@ -121,7 +121,7 @@ export default function Home() {
           </div>
 
           {/* Project 2 */}
-          <div className="rounded-2xl overflow-hidden border-2 border-orange-600 shadow-md bg-gradient-to-b from from-black to-orange-600">
+          <div className="rounded-2xl overflow-hidden border-2 border-black shadow-md bg-gradient-to-b from from-black to-orange-600">
             <div className="h-40 md:h-115 relative overflow-hidden">
               <Image
                 src={GrillHouseProject.src}
@@ -131,7 +131,7 @@ export default function Home() {
                 className="object-cover h-full"
               />
             </div>
-            <div className="p-7 bg-orange-600 h-full md:p-9">
+            <div className="p-7 bg-black h-full md:p-9">
               <h3 className="font-bold text-xl mb-1 text-white">
                 GrillHouse by Sigma - <br />
                 App Redesign
