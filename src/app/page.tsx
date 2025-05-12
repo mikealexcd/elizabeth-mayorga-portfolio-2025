@@ -34,17 +34,16 @@ export default function Home() {
       <section className="flex flex-col md:flex-row gap-8 justify-between items-center mb-24">
         <div className="max-w-3xl">
           <p className="text-gray-600 mb-2">Welcome to my portfolio!</p>
-          <h1 className="text-4xl font-bold mb-0">
+          <h1 className="text-2xl md:text-4xl font-bold mb-3">
             Hi! I&apos;m Elizabeth <span className="text-yellow-400">👋</span> —
-            a <span className="text-emerald-500">product designer</span>
-          </h1>
-          <p className="text-4xl font-bold mb-6">
+            a <span className="text-emerald-500">product designer </span>
             who&apos;s spent 8+ years crafting thoughtful, accessible
             experiences that make people&apos;s lives easier.
-          </p>
+
+          </h1>
           <Link
             href="https://www.linkedin.com/in/elizabeth-mayorga/"
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors text-xl font-medium"
           >
             Connect with me on LinkedIn{" "}
             <svg
@@ -67,8 +66,8 @@ export default function Home() {
         <div className="relative">
           <Image
             src={ElizabethPortrait.src}
-            height={313}
-            width={348}
+            height={311}
+            width={280}
             alt="Elizabeth Mayorga"
             className="rounded-3xl mx-auto"
           />
@@ -107,14 +106,13 @@ export default function Home() {
                 className="object-cover h-full"
               />
             </div>
-            <div className="p-10 bg-blue-900">
+            <div className="p-7 bg-blue-900 h-full md:p-9">
               <h3 className="font-bold text-xl mb-1 text-white">
                 KPMG - <br />
                 Proposal Generation Bot
               </h3>
               <p className="text-sm text-white mb-4">
-                I was tasked with leading the design of a new feature for mobile
-                and desktop.
+                I led the design of a mobile and desktop feature for KPMG's proposal generation bot.
               </p>
               <Link href="/projects/kpmg" className="bg-white border border-gray-300 h-5 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
                 READ CASE STUDY
@@ -133,14 +131,13 @@ export default function Home() {
                 className="object-cover h-full"
               />
             </div>
-            <div className="p-10 bg-orange-600">
+            <div className="p-7 bg-orange-600 h-full md:p-9">
               <h3 className="font-bold text-xl mb-1 text-white">
                 GrillHouse by Sigma - <br />
                 App Redesign
               </h3>
               <p className="text-sm text-white mb-4">
-                Redesign of a an existing app from a business targeted to
-                deliver and pickup fresh cut meats.
+                Redesigned a B2C app for GrillHouse to improve delivery and pickup of fresh-cut meats.
               </p>
               <Link href='/projects/grillhouse' className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
                 READ CASE STUDY
@@ -159,14 +156,13 @@ export default function Home() {
                 className="object-cover h-full"
               />
             </div>
-            <div className="p-10 bg-blue-700">
+            <div className="p-7 bg-blue-700 h-full md:p-9">
               <h3 className="font-bold text-xl mb-1 text-white">
                 BMO - <br />
                 US Wire Transfer
               </h3>
               <p className="text-sm text-white mb-4">
-                New feature introduced for BMO US to allow customers to send
-                wire transfers.
+                Designed a new feature for BMO US customers, available on both mobile and web platforms.
               </p>
               <Link href='/projects/bmo-wire-transfers' className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
                 READ CASE STUDY
@@ -204,7 +200,7 @@ export default function Home() {
                   improving user experiences and making technology more accessible
                   and enjoyable for all.
                 </p>
-                <p className="mb-8">
+                <p className="mb-2">
                   During my spare time, you&apos;ll find me binge-watching tv
                   shows, watching videos on YouTube, playing video games, or
                   hanging out with my cats, who surprisingly love TV as much as I
