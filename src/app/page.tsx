@@ -106,7 +106,7 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="mb-24 scroll-m-8">
         <h2 className="text-3xl font-bold mb-8">My projects</h2>
-        <div className={hideKPMG ? "flex flex-wrap justify-center gap-6 items-stretch" : "grid md:grid-cols-3 gap-6"}>
+        <div className="grid md:grid-cols-3 gap-6">
           {/* Project 1 */}
           {!hideKPMG && (
             <div className="rounded-2xl overflow-hidden border-2 border-gray-500 shadow-md">
@@ -135,7 +135,7 @@ export default function Home() {
           )}
 
           {/* Project 2 */}
-          <div className={`rounded-2xl overflow-hidden border-2 border-black shadow-md bg-gradient-to-b from from-black to-orange-600 ${hideKPMG ? "md:flex-[0_1_30%]" : ""}`}>
+          <div className="rounded-2xl overflow-hidden border-2 border-black shadow-md bg-gradient-to-b from from-black to-orange-600">
             <div className="h-40 md:h-115 relative overflow-hidden">
               <Image
                 src={GrillHouseProject.src}
@@ -160,7 +160,7 @@ export default function Home() {
           </div>
 
           {/* Project 3 */}
-          <div className={`rounded-2xl overflow-hidden border-2 border-blue-500 shadow-md bg-gradient-to-b from from-white to-blue-700 ${hideKPMG ? "md:flex-[0_1_30%]" : ""}`}>
+          <div className="rounded-2xl overflow-hidden border-2 border-blue-500 shadow-md bg-gradient-to-b from from-white to-blue-700">
             <div className="h-40 md:h-115 relative overflow-hidden">
               <Image
                 src={BMOProject.src}
