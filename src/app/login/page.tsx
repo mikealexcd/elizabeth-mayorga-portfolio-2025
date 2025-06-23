@@ -1,17 +1,27 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
-import { useRouter } from "next/navigation"
+import React, { useState } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
-import { setCookie } from 'cookies-next'
+import { setCookie, deleteCookie } from 'cookies-next'
 import LockIllustration from "./lock-illustration"
 
 export default function LoginPage() {
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
+  const [cleared, setCleared] = useState(false)
   const router = useRouter()
+  const searchParams = useSearchParams()
+
+  React.useEffect(() => {
+    if (searchParams.get('clear')) {
+      deleteCookie('authenticated')
+      deleteCookie('portfolio_mode')
+      setCleared(true)
+      // Optionally, remove the query param from the URL
+      router.replace('/login')
+    }
+  }, [searchParams, router])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -19,6 +29,11 @@ export default function LoginPage() {
     // This is not a secure way to handle passwords, but this is supposed to be a small barrier for potential portfolio viewers.
     if (password === "unlock") {
       setCookie("authenticated", "true", { maxAge: 60 * 60 * 24 * 7 }) // 1 week
+      setCookie("portfolio_mode", "full", { maxAge: 60 * 60 * 24 * 7 })
+      router.push("/")
+    } else if (password === "openportfolio") {
+      setCookie("authenticated", "true", { maxAge: 60 * 60 * 24 * 7 })
+      setCookie("portfolio_mode", "view-portfolio", { maxAge: 60 * 60 * 24 * 7 })
       router.push("/")
     } else {
       // Password is incorrect, show error
@@ -39,6 +54,9 @@ export default function LoginPage() {
         <p className="text-gray-600 mb-8 text-center">Please enter the password to access my portfolio.</p>
 
         {/* Password Form */}
+        {cleared && (
+          <div className="mb-4 text-green-600 text-center font-medium">Login cookies have been cleared.</div>
+        )}
         <form onSubmit={handleSubmit} className="w-full">
           <div className="mb-6">
             <input

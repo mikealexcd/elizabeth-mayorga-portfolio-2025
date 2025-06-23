@@ -1,3 +1,6 @@
+"use client";
+import { useEffect, useState } from "react";
+import { getCookie } from "cookies-next";
 import Image from "next/image";
 import Link from "next/link";
 import ElizabethPortrait from "@/assets/homepage/elizabeth-portrait.png";
@@ -8,6 +11,15 @@ import BMOProject from "@/assets/homepage/bmo-project.jpg";
 import Logo from "@/assets/logo";
 
 export default function Home() {
+  const [hideKPMG, setHideKPMG] = useState(false);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const mode = getCookie("portfolio_mode");
+      if (mode === "view-portfolio") {
+        setHideKPMG(true);
+      }
+    }
+  }, []);
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
       {/* Header */}
@@ -94,34 +106,36 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="mb-24 scroll-m-8">
         <h2 className="text-3xl font-bold mb-8">My projects</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className={hideKPMG ? "flex flex-wrap justify-center gap-6 items-stretch" : "grid md:grid-cols-3 gap-6"}>
           {/* Project 1 */}
-          <div className="rounded-2xl overflow-hidden border-2 border-gray-500 shadow-md">
-            <div className="h-40 md:h-115 relative overflow-hidden">
-              <Image
-                src={KPMGProject.src}
-                width={417}
-                height={460}
-                alt="KPMG Proposal Generation Bot"
-                className="object-cover h-full"
-              />
+          {!hideKPMG && (
+            <div className="rounded-2xl overflow-hidden border-2 border-gray-500 shadow-md">
+              <div className="h-40 md:h-115 relative overflow-hidden">
+                <Image
+                  src={KPMGProject.src}
+                  width={417}
+                  height={460}
+                  alt="KPMG Proposal Generation Bot"
+                  className="object-cover h-full"
+                />
+              </div>
+              <div className="p-7 bg-blue-900 h-full md:p-9">
+                <h3 className="font-bold text-xl mb-1 text-white">
+                  KPMG - <br />
+                  Proposal Generation Bot
+                </h3>
+                <p className="text-sm text-white mb-4">
+                  I led the design of a mobile and desktop feature for KPMG's proposal generation bot.
+                </p>
+                <Link href="/projects/kpmg" className="bg-white border border-gray-300 h-5 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
+                  READ CASE STUDY
+                </Link>
+              </div>
             </div>
-            <div className="p-7 bg-blue-900 h-full md:p-9">
-              <h3 className="font-bold text-xl mb-1 text-white">
-                KPMG - <br />
-                Proposal Generation Bot
-              </h3>
-              <p className="text-sm text-white mb-4">
-                I led the design of a mobile and desktop feature for KPMG's proposal generation bot.
-              </p>
-              <Link href="/projects/kpmg" className="bg-white border border-gray-300 h-5 rounded-full px-4 py-2 text-sm font-bold hover:bg-gray-50 transition-colors shadow-[2px_6px_0px_0px_#000000]">
-                READ CASE STUDY
-              </Link>
-            </div>
-          </div>
+          )}
 
           {/* Project 2 */}
-          <div className="rounded-2xl overflow-hidden border-2 border-black shadow-md bg-gradient-to-b from from-black to-orange-600">
+          <div className={`rounded-2xl overflow-hidden border-2 border-black shadow-md bg-gradient-to-b from from-black to-orange-600 ${hideKPMG ? "md:flex-[0_1_30%]" : ""}`}>
             <div className="h-40 md:h-115 relative overflow-hidden">
               <Image
                 src={GrillHouseProject.src}
@@ -146,7 +160,7 @@ export default function Home() {
           </div>
 
           {/* Project 3 */}
-          <div className="rounded-2xl overflow-hidden border-2 border-blue-500 shadow-md bg-gradient-to-b from from-white to-blue-700">
+          <div className={`rounded-2xl overflow-hidden border-2 border-blue-500 shadow-md bg-gradient-to-b from from-white to-blue-700 ${hideKPMG ? "md:flex-[0_1_30%]" : ""}`}>
             <div className="h-40 md:h-115 relative overflow-hidden">
               <Image
                 src={BMOProject.src}

@@ -18,6 +18,16 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/login", request.url))
   }
 
+  // Clear cookies if ?clear is present
+  if (request.nextUrl.searchParams.has('clear')) {
+    const nextUrl = request.nextUrl.clone()
+    nextUrl.searchParams.delete('clear')
+    const response = NextResponse.redirect(nextUrl)
+    response.cookies.delete('authenticated')
+    response.cookies.delete('portfolio_mode')
+    return response
+  }
+
   // Otherwise, continue with the request
   return NextResponse.next()
 }

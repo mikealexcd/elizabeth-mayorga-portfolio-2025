@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { SectionHeader } from "@/components/case-study/section-header"
@@ -10,8 +12,21 @@ import KPMGChallenge from "@/assets/kpmg/kpmg-challenge.png"
 import KPMGConclusion from "@/assets/kpmg/kpmg-conclusion.jpg"
 import KPMGMockups from "@/assets/kpmg/kpmg-mockups-desktop.png"
 import KPMGMockupsMobile from "@/assets/kpmg/kpmg-mockups-mobile.png"
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
+import { getCookie } from "cookies-next"
 
 export default function KPMGCaseStudy() {
+  const router = useRouter();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const mode = getCookie("portfolio_mode");
+      if (mode === "view-portfolio") {
+        router.replace("/login");
+      }
+    }
+  }, [router]);
+
   return (
     <main className="bg-white">
       {/* Navigation */}
@@ -93,7 +108,7 @@ export default function KPMGCaseStudy() {
       {/* Solution Section */}
       <InfoSection title="How did I approach this?" subtitle="SOLUTION" bgColor="bg-white">
         <p>
-          I developed a solution that leverages documents provided by consultants and compares them against a large database of existing proposals to generate new ones that meet KPMG's quality standards. The system incorporates structured data while aligning with KPMG’s branding and compliance requirements. To ensure data security, it operates entirely within KPMG’s protected environment. I also followed their existing design system components, introducing enhancements based on recent development updates.
+          I developed a solution that leverages documents provided by consultants and compares them against a large database of existing proposals to generate new ones that meet KPMG's quality standards. The system incorporates structured data while aligning with KPMG's branding and compliance requirements. To ensure data security, it operates entirely within KPMG's protected environment. I also followed their existing design system components, introducing enhancements based on recent development updates.
         </p>
       </InfoSection>
 
