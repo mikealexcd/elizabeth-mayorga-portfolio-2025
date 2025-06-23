@@ -1,27 +1,15 @@
 "use client"
 
 import React, { useState } from "react"
-import { useRouter, useSearchParams } from "next/navigation"
+import { useRouter } from "next/navigation"
 import Link from "next/link"
-import { setCookie, deleteCookie } from 'cookies-next'
+import { setCookie } from 'cookies-next'
 import LockIllustration from "./lock-illustration"
 
 export default function LoginPage() {
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
-  const [cleared, setCleared] = useState(false)
   const router = useRouter()
-  const searchParams = useSearchParams()
-
-  React.useEffect(() => {
-    if (searchParams.get('clear')) {
-      deleteCookie('authenticated')
-      deleteCookie('portfolio_mode')
-      setCleared(true)
-      // Optionally, remove the query param from the URL
-      router.replace('/login')
-    }
-  }, [searchParams, router])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -54,9 +42,6 @@ export default function LoginPage() {
         <p className="text-gray-600 mb-8 text-center">Please enter the password to access my portfolio.</p>
 
         {/* Password Form */}
-        {cleared && (
-          <div className="mb-4 text-green-600 text-center font-medium">Login cookies have been cleared.</div>
-        )}
         <form onSubmit={handleSubmit} className="w-full">
           <div className="mb-6">
             <input
